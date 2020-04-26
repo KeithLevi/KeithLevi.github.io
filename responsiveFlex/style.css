@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+}
+
+/*---------- Header --------*/
+.header {
+    background: #ADD8E6;
+}
+
+.header h1{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 24px;
+}
+
+.nav-menu ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    list-style: none;
+    background-color: #2F4F4F;
+}
+
+.nav-menu li a {
+    display: inline-block;
+    border-right: 1px solid #132222;
+    text-decoration: none;
+    color: #fff;
+    padding: 17px 35px;
+}
+
+.nav-menu li a:hover {
+    color: #132222;
+    background: #fff;
+    border-right: 1px solid #132222;
+}
+
+/* ----------------------- Main --------- */
+@media screen and (min-width:600px) {
+    .container {
+        display: flex;
+        height: 500px;
+    }
+
+    .col1 {
+        width: 25%;
+        background-color: #AAAAAA;
+    }
+
+    .col3 {
+        width: 25%;
+        background-color: #CCCCCC;
+    }
+
+    .col2 {
+        width: 50%;
+        background-color: #BBBBBB;
+    }
+}
+
+/* @media screen and (max-width:600px){  */
+    .container {
+        flex-wrap: wrap;
+    }
+    .col2 {
+        width: 100%;
+        order: 3;
+    }
+    .col1 {
+        width: 50%;
+    }
+    .col3 {
+        width: 50%;
+    }
+/*  */
+
+.col-pad {
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+/*------------------- Footer --------------*/
+.footer {
+    background-color: #2F4F4F;
+}
+.footer h3 {
+    text-align: center;
+    padding: 30px;
+    margin: 0;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
