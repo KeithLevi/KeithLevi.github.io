@@ -1,0 +1,2 @@
+{  "esversion": 6,  "strict": "global" }
+#not being used -- need to set the use config file in settings if want to use this, but then does not use the default settings in intellij

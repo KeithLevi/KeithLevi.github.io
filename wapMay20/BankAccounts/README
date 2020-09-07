@@ -1,0 +1,11 @@
+
+5/4/2020
+
+Implemented most of the key parts of Michael's class/inheritance lab.
+
+Some of the trickiest parts were getting jsHint set up.
+Have intellij settings for jsHint Environment settings:  Browser, Development, Mocha
+
+and,
+/*jshint  esversion:6, globalstrict:true */
+/*global assert, Account, SavingsAccount, Bank */
