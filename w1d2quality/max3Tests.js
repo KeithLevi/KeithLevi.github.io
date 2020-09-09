@@ -7,7 +7,7 @@ describe("max3", function() {
     });
 
     it("max of 5  4 -444 is 5", function() {
-        assert.equal(5, max3(5, 4, -44));
+        assert.strictEqual(max3(5, 4, "5"), 5);
       });
   
  
