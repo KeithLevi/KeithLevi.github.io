@@ -14,3 +14,5 @@ let ladder = {
       alert( this.step );
     }
   };
+
+  
