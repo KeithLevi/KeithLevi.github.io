@@ -1,7 +1,5 @@
 "use strict";
-/* global require */
-const acc = require("./accumulator.js");
-const assert = require("assert");
+/* global assert Accumulator */
 
 /*
 Write a constructor function Accumulator(initialValue, increment).  The object it creates should:
@@ -14,13 +12,13 @@ describe("accumulator", function () {
 
 
     it("checks initialValue and increment", function () {
-        const accumulator = new acc.Accumulator(5, 10);
+        const accumulator = new Accumulator(5, 10);
         assert.strictEqual(accumulator.currentValue, 5);
         assert.strictEqual(accumulator.increment, 10);
     });
 
     it("checks accumulate", function () {
-        const accumulator = new acc.Accumulator(5, 10);
+        const accumulator = new Accumulator(5, 10);
         accumulator.accumulate();
         accumulator.accumulate();
         assert.strictEqual(accumulator.currentValue, 25);
@@ -28,7 +26,7 @@ describe("accumulator", function () {
     });    
 
     it("checks report", function () {
-        const accumulator = new acc.Accumulator(5, 10);
+        const accumulator = new Accumulator(5, 10);
         assert.strictEqual(accumulator.report(), 5);
     });    
 

@@ -12,6 +12,7 @@ o	findIDs, which will find all the libraryIDs in libraryBooks and return them in
 
 describe("library", function () {
 
+    //This should be used as the "library database" for testing.
     // let library = [
     //     { title: "The Road Ahead", author: "Bill Gates", libraryID: 1254 },
     //     { title: "Walter Isaacson", author: "Steve Jobs", libraryID: 4264 },
@@ -21,6 +22,7 @@ describe("library", function () {
     const titles = ["Mockingjay: The Final Book of The Hunger Games", "The Road Ahead", "Walter Isaacson"];
     const authors = ["Bill Gates", "Steve Jobs", "Suzanne Collins"];
     const ids = [1254, 3245, 4264];
+
 
     it("find titles", function () {
         assert.deepEqual(findTitles(), titles);
