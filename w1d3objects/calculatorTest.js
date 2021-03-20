@@ -2,19 +2,19 @@
 /* global calculator assert */
 describe("calculator", function() {
   //alert('in describe');
-   context("when 2 and 3 entered", function() {
-      beforeEach(function() {
-        sinon.stub(window, "prompt");
+//    context("when 2 and 3 entered", function() {
+//       beforeEach(function() {
+//         sinon.stub(window, "prompt");
   
-        prompt.onCall(0).returns("2");
-        prompt.onCall(1).returns("3");
+//         prompt.onCall(0).returns("2");
+//         prompt.onCall(1).returns("3");
   
-        calculator.read();
-      });
+//         calculator.read();
+//       });
   
-      afterEach(function() {
-        prompt.restore();
-      });
+//       afterEach(function() {
+//         prompt.restore();
+//       });
 
      calculator.a = 3;
      calculator.b = 2;
@@ -26,6 +26,6 @@ describe("calculator", function() {
       it("the multiplication product is 6", function() {
         assert.equal(calculator.mul(), 6);
       });
-    });
+  //  });
   
   });
