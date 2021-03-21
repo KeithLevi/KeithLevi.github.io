@@ -15,6 +15,7 @@ function maxOfThree(a, b, c){
     if (b > a && a > c) {return b;}
     if (b > c && a > c) {return b;}
     if (c > a && a > b) {return c;}
+    if (c > b && b > c) {return c;}
 
  
 }
