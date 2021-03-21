@@ -10,7 +10,13 @@
  * @returns {number} largest of a, b, c
  */
 function maxOfThree(a, b, c){ 
-    return c;
+    if (a > b && b > c) {return a;}
+    if (a > c && c > b) {return a;}
+    if (b > a && a > c) {return b;}
+    if (b > c && a > c) {return b;}
+    if (c > a && a > b) {return c;}
+
+ 
 }
 
 /**
