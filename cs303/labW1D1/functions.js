@@ -27,6 +27,9 @@ function maxOfThree(a, b, c){
  */
 function sum(arr){
     let tot = 0;
+    for (const element of arr){
+        tot += element;
+    }
 
     return tot;
 }
