@@ -59,10 +59,10 @@ describe("sum and multiply", function () {
 */
 describe("findLongestWord", function () {
     it("tests longest", function () {
-        assert.strictEqual(findLongestWord(["this", "is", "a", "test", "longest"]), "longest");
+        assert.strictEqual(findLongestWord(["this", "is", "a", "test", "longest"]), 7);
     });
     it("tests longest with spaces", function () {
-        assert.strictEqual(findLongestWord(["this", "is", "a word with spaces", "test", "longest"]), "a word with spaces");
+        assert.strictEqual(findLongestWord(["this", "is", "a word with spaces", "test", "longest"]), 18);
     });
 });
 
