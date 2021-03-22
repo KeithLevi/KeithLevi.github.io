@@ -5,7 +5,7 @@
 Comment these out when you send it to the browser with the index.html mocha setup page.
 
 const assert = require("assert");  //always need this with node
-const myExports = require("./functions.js");  //with node need the name of your file with your functions here
+const myExports = require("./app.js");  //with node need the name of your file with your functions here
 const maxOfThree = myExports.maxOfThree;  //do this for all of the functions used in the Mocha tests
 const multiply = myExports.multiply;
 const sum = myExports.sum;
