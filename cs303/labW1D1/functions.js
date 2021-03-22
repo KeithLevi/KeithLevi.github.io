@@ -1,5 +1,6 @@
 "use strict";
-
+module.exports = {maxOfThree, sum, multiply };
+//exports.maxOfThree = maxOfThree;
 
 
 /**
@@ -46,4 +47,3 @@ function multiply(arr){
 
 }
 
-exports = {sum, maxOfThree, multiply};
