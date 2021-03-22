@@ -1,5 +1,11 @@
 "use strict";
-const assert = require("assert");
+
+const assert = (typeof variable === "undefined") || require("assert");
+const funs = require("./functions.js");
+const maxOfThree = funs.maxOfThree;
+
+//const assert = require("assert");
+
 /* global assert maxOfThree sum multiply findLongestWord reverseArray reverseArrayInPlace scoreExams */
 
 /* 1.	1.	Define a function maxOfThree() that takes three numbers as arguments and returns the largest of them.  */

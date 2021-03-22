@@ -45,3 +45,5 @@ function multiply(arr){
     return tot;
 
 }
+
+exports = {sum, maxOfThree, multiply};
