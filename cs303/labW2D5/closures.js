@@ -12,7 +12,7 @@
  */
 function inArray(arr) {
 
-    return function (element) { return arr.includes(element); };
+
 
 }
 
@@ -25,13 +25,7 @@ function inArray(arr) {
  */
 function inBetween(low, high) {
 
-    return function (element) {
-        if (element > low && element < high) {
-            return true;
-        } else {
-            return false;
-        }
-    };
+
 }
 
 /**
@@ -40,7 +34,7 @@ function inBetween(low, high) {
  * @returns {Function} sorting function
  */
 function byField(fieldName){
-    return (a, b) => a[fieldName] > b[fieldName] ? 1 : -1 ;
+
 }
 
 
@@ -48,21 +42,7 @@ function byField(fieldName){
  * @returns {Function} closure that returns it's number
  */
 function makeArmy() {
-    let shooters = [];
-  
-    let i = 0;
-    while (i < 10) {
-        let idx = i;
-        /* eslint-disable-next-line */
-      let shooter = function() { // shooter function
-        console.log("I am shooter ", idx); // should return its number
-        return idx;
-      };
-      shooters.push(shooter);
-      i++;
-    }
-  
-    return shooters;
+
   }
 
   let army = makeArmy();
